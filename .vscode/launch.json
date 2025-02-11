@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "SAM CLI Python",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "port": 5890,
+        "host": "localhost"
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/lambda/lambdaFunction",
+          "remoteRoot": "/var/task"
+        }
+      ]
+    }
+  ]
+}
+
